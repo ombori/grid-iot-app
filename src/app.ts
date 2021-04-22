@@ -1,14 +1,21 @@
 import { connect } from '@ombori/ga-module';
 
+import { Settings } from './schema.js';
+
 // TODO: Update 'name' field in package.json with 'organisation-name.module-name' identifier
 // TODO: Update 'description' field in package.json with module's descriptive name
 // TODO: Update 'container-registry' field in package.json with your container registry hostname
 // TODO: Create .env file with <your-registry>_USERNAME and <your-registry>_PASSWORD values
 
-const module = await connect();
+const module = await connect<Settings>();
 
 // TODO: insert your code here
-console.log('test_setting value is', module.getSetting('test_setting'));
+
+// Example of settings handling
+console.log(`testSetting value is ${module.settings.testSetting}`);
+module.onSettings(settings => {
+  console.log('settings updated:', settings)
+});
 
 // In this example we send TestModule.Event message every second
 let seq = 0;
@@ -30,7 +37,7 @@ module.onEvent('Test.Event', async (data) => {
 
 // Example of MQTT topic subscription
 module.subscribe('ombori', (data, topic) => {
-  console.log(`${topic}> `, data.toString());
+  console.log(`Incoming MQTT data on ${topic}:`, data.toString());
 });
 
 // Example of publishing to MQTT topic
