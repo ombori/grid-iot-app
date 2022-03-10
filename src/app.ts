@@ -1,4 +1,4 @@
-import { connect } from '@ombori/ga-module';
+import { connect, signals } from '@ombori/ga-module';
 
 import { Settings } from './schema.js';
 
@@ -8,6 +8,10 @@ import { Settings } from './schema.js';
 // TODO: Create .env file with <your-registry>_USERNAME and <your-registry>_PASSWORD values
 
 const module = await connect<Settings>();
+
+// Sample Grid Signals event
+// See more: https://developer.omborigrid.com/#/grid-signals/edge-modules-integration
+await signals.detectMood({ mood: 'HAPPY', certainty: 90 });
 
 // TODO: insert your code here
 
