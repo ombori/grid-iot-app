@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@ombori/ts-schema": "^2.92.0",
-    "typescript": "^4.2.3"
+    "typescript": "^4.6.4"
   },
   "scripts": {
     "bootstrap": "echo init ok",
