@@ -21,7 +21,7 @@
     "bootstrap": "echo init ok",
     "schema": "mkdir -p build && npx ts-schema src/schema.ts build/",
     "build": "mkdir -p build && tsc && yarn schema && touch build/index.html && omg app build",
-    "upload-description": "omg app upload-description",
+    "desc": "omg app upload-description",
     "pub": "omg app publish",
     "deploy": "omg module deploy"
   }

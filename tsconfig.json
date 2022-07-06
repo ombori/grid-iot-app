@@ -20,6 +20,6 @@
     "declaration": false
   },
   "include": [
-    "src",
+    "src"
   ]
 }
