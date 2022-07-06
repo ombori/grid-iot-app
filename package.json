@@ -11,11 +11,11 @@
     "extends": "react-app"
   },
   "dependencies": {
-    "@ombori/ga-module": "^2.194.3"
+    "@ombori/ga-module": "^2.218.6"
   },
   "devDependencies": {
     "@ombori/ts-schema": "^2.92.0",
-    "typescript": "^4.6.4"
+    "typescript": "^4.7.4"
   },
   "scripts": {
     "bootstrap": "echo init ok",
