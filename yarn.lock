@@ -174,20 +174,20 @@
     node-fetch "^2.6.1"
     ws "^7.4.5"
 
-"@ombori/ga-module@^2.218.6":
-  version "2.218.6"
-  resolved "https://registry.yarnpkg.com/@ombori/ga-module/-/ga-module-2.218.6.tgz#ff06c649a2e2877179803c1fc324014182a00efe"
-  integrity sha512-GMkDjqLN97PkoRqLHih2Yz9PdSRgNXzwDz/rT5zb4/kjpZI5+nozOiXY1pobCHfkMJNlCEtrwnDfh0BwCuYZ+g==
+"@ombori/ga-module@^2.229.6":
+  version "2.229.6"
+  resolved "https://registry.yarnpkg.com/@ombori/ga-module/-/ga-module-2.229.6.tgz#17828b98809fc8d5d44cb6f96e9831106ea22db9"
+  integrity sha512-8OQqkumcqSjcEtTtEUCh4aq5EZWMO5lqpqMNlP8Ugf4hK5skE1q9is3Xuepm9lXPbCYWxltWYXEh2TJBnM8dhg==
   dependencies:
-    "@ombori/grid-signals" "2.218.6"
+    "@ombori/grid-signals" "2.229.6"
     azure-iot-device-mqtt "^1.15.3"
     azure-iothub "^1.14.6"
     websocket-stream "^5.5.2"
 
-"@ombori/grid-signals@2.218.6":
-  version "2.218.6"
-  resolved "https://registry.yarnpkg.com/@ombori/grid-signals/-/grid-signals-2.218.6.tgz#9efcc3a882ab4f7d89971c4c85b1c505f1ac1dd6"
-  integrity sha512-OkvYUoe40O/2nXiitnXf8IWUYf2h5LM8qwzfI8E0G0hISYl7qlN1LAKrjS54GjazgFr2zU2yfwyHhz0wsQdKwg==
+"@ombori/grid-signals@2.229.6":
+  version "2.229.6"
+  resolved "https://registry.yarnpkg.com/@ombori/grid-signals/-/grid-signals-2.229.6.tgz#d8f828e2864b1b803aa71542a49ed152cc9d2c91"
+  integrity sha512-YYiEUJdPnsKzZy4EtZFCj3l0Ivh6hLI06ATX3pQhTDVg/XEWef+Qcq6VdtBdhk3174K/Y92JD/uB0vsTIE8D0A==
   dependencies:
     "@microsoft/signalr" "^6.0.0"
     isomorphic-fetch "^3.0.0"
