@@ -9,8 +9,15 @@ This is a full description. All content starting from here will be displayed at 
 
 Description file is published with the app. To update the description manually, run `yarn desc`.
 
-## Headers:
-- lists
-- are
-- also
-- supported
+## Methods
+List module methods here
+
+## Telemetry
+Show an example of telemetry info here
+Telemetry information can be accessed via `omg dev status` command
+
+## Incoming events
+List incoming events supported by the app
+
+## Outgoing events
+List events emitted by the app
