@@ -64,3 +64,4 @@ dist
 
 src/settings.json
 src/settings
+.DS_Store
