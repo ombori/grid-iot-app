@@ -1,8 +1,8 @@
-FROM node:18-slim as pre-build
+FROM node:18-alpine as pre-build
 COPY package*.json ./
 RUN npm version 0.0.1
 
-FROM node:18-slim
+FROM node:18-alpine
 
 WORKDIR /app/
 
