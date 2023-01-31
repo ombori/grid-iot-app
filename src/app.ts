@@ -21,6 +21,12 @@ module.onSettings(settings => {
   console.log('settings updated:', settings)
 });
 
+// Example of module method
+module.onMethod('someMethod', async (payload) => {
+  console.log('Received method call', payload);
+  return 'hello there';
+})
+
 // In this example we send TestModule.Event message every second
 let seq = 0;
 setInterval(() => {
@@ -28,13 +34,7 @@ setInterval(() => {
   seq += 1;
 }, 1000);
 
-// Example of module method
-module.onMethod('someMethod', async (payload) => {
-  console.log('Received method call', payload);
-  return 'hello there';
-})
-
 // Example of an event coming from app or another module
-module.onEvent('Test.Event', async (data) => {
+module.subscribe('Test.Event', async (data) => {
   console.log('Received event', data);
 });
